@@ -15,6 +15,7 @@ public class Avthumb{
 
     @org.junit.Test
     public void test2(){
+
         System.out.println(new Date(System.currentTimeMillis()));
     }
 
