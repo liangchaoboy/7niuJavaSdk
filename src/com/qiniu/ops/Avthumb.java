@@ -28,14 +28,14 @@ public class Avthumb{
         //新建一个OperationManager对象
         OperationManager operater = new OperationManager(auth);
         //设置要转码的空间和key，并且这个key在你空间中存在
-        String bucket = "test01";
-        String key = "TheHuntingGround.m4v";
+        String bucket = "atest";
+        String key = "oFx_Ol4RpO3d_WMo-2I9bV6MdCEpQBH59FZnsFd5H1Sb_ChOvzTJ_LMEh4Gr85C7.amr";
         //设置转码操作参数
-        String fops = "avthumb-cntv-test/mp4/ab/160k/vb/1.2m/s/1280x720";
+        String fops = "avthumb/mp3";
         //设置转码的队列
         String pipeline = "da";
         //可以对转码后的文件进行使用saveas参数自定义命名，当然也可以不指定文件会默认命名并保存在当前空间。
-        String urlbase64 = UrlSafeBase64.encodeToString("cntv-last:TheHuntingGround.m4v-test");
+        String urlbase64 = UrlSafeBase64.encodeToString("atest:test1.mp3");
         String pfops = fops + "|saveas/"+urlbase64;
         //设置pipeline参数
         StringMap params = new StringMap().putWhen("force", 1, true).putNotEmpty("pipeline", pipeline);
